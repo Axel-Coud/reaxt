@@ -2,7 +2,7 @@ Ext.define('Reaxt.view.helloReact', () => {
 
     class Hello2 extends React.Component {
         render() {
-            return `<h1>Hello ${this.props.name}</h1>`; //jsx non babelisé
+            return `<h1>Hello ${this.props.name}</h1>`; //jsx non babelisÃ©
         }
     }
 

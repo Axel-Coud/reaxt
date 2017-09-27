@@ -1,15 +1,19 @@
 Ext.define('Reaxt.view.helloReact', () => {
 
-       class Hello2 extends React.Component {
+    class Hello2 extends React.Component {
         render() {
-            return `<h1>Hello ${ this.props.name }</h1>`
+            console.log(this.props.name, this);
+            return <h1>
+                Hello { this.props.name }
+                </h1>
         }
-      }
+    }
 
     function afterRender(cpt) {
         const test = cpt.config.props
+        console.log(test);
         ReactDOM.render(
-            < Hello2 />,
+            < Hello2 {...test} />,
             document.getElementById(this.getEl().dom.id)
         );
     };

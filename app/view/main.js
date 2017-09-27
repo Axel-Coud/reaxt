@@ -1,9 +1,11 @@
 Ext.define('Reaxt.view.main', {
     extend: 'Ext.container.Container',
+    alias : 'widget.main',
 
     requires: [
         'Ext.plugin.Viewport',
-        'Reaxt.view.helloReact'
+        // 'Reaxt.view.testComponent'
+        // 'Reaxt.view.helloReact',
     ],
 
     layout: 'center',
@@ -11,15 +13,16 @@ Ext.define('Reaxt.view.main', {
     items: [{
         xtype: 'panel',
         closable:true,
+        resizable: true,
+        draggable: true,
+    
         title: 'Reaxt is here',
         layout: 'center',
         width: 300,
         height: 200,
         items: [{
-            xtype: 'hello-react',
-            props : {
-                name : 'coucou'
-            }
+            // xtype: 'testComponent'
         }]
     }]
 })
+

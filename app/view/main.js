@@ -6,23 +6,22 @@ Ext.define('Reaxt.view.main', {
         'Ext.plugin.Viewport',
         // 'Reaxt.view.testComponent'
         // 'Reaxt.view.helloReact',
+        'Reaxt.view.reactGrid'
     ],
 
-    layout: 'center',
+    layout: 'vbox',
     
     items: [{
-        xtype: 'panel',
-        closable:true,
-        resizable: true,
-        draggable: true,
-    
-        title: 'Reaxt is here',
-        layout: 'center',
-        width: 300,
-        height: 200,
-        items: [{
-            // xtype: 'testComponent'
-        }]
+        xtype : 'component',
+        html: 'Foo'
+    },{
+       
+            xtype: 'reactGrid',
+            width : '100%',
+            style : {
+                background:'silver'
+            },
+            flex:1
     }]
 })
 

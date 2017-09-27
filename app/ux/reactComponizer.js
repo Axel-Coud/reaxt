@@ -16,7 +16,6 @@ Ext.define('Reaxt.ux.reactComponizer', {
             console.log("render reactComponizer")
             render(this.config.data)
         })
-        // this.on('afterrender', () => flatpickr('#flat', {}))
         this.on('beforedestroy', () => ReactDOM.unmountComponentAtNode(this.el.dom))
     }
 })

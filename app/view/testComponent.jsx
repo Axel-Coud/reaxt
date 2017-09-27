@@ -18,7 +18,7 @@ Ext.define('Reaxt.view.testComponent', {
     xtype: 'testComponent',
 
     listeners: {
-        render: () => flatpickr('#flat', {})
+        afterrender: () => flatpickr('#flat', {})
     },
 
     config: {
